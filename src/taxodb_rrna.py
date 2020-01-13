@@ -203,7 +203,7 @@ if __name__ == '__main__':
                                  metavar="<db type>",
                                  type=str,
                                  required=True,
-                                 choices=['silva' 'greengenes'])
+                                 choices=['silva', 'greengenes'])
 
     args = parser.parse_args()
 
