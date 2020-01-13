@@ -216,6 +216,7 @@ if __name__ == '__main__':
             extract_gg(input=args.fasta, bdb=bdb)
     except IOError as err:
         print >> sys.stderr, "Can't open input file %s: %s" % (args.fasta, str(err))
+        sys.exit(1)
     except db.DBAccessError as err:
         print >> sys.stderr, "Error while opening Berkeley database %s: %s" % (args.accVos_oc, str(err))
         sys.exit(1)
